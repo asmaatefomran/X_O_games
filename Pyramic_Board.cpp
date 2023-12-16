@@ -1,35 +1,3 @@
-/*#include <iostream>
-#include <random>
-#include <iomanip>
-#include <algorithm>
-#include "BoardGame_Classes.h"
-using namespace std;
-
-// Set the board
-Pyramic_Board::Pyramic_Board () {
-    n_rows =3;
-    n_cols = 5;
-    board = new char*[n_rows];
-    for (int i = 0; i < n_rows; i++) {
-        board [i] = new char[n_cols];
-        for (int j = 0; j < n_cols; j++)
-            board[i][j] = 0;
-    }
-}
-
-// Return true  if move is valid and put it on board
-// within board boundaries in empty cell
-// Return false otherwise
-bool Pyramic_Board::update_board (int x, int y, char mark){
-    // Only update if move is valid
-    if ((x >=1&&y>=1)||(x > 2 || y < 0 || y > 2) && (board[x][y] == 0)) {
-        board[x][y] = toupper(mark);
-        n_moves++;
-        return true;
-    }
-    else
-        return false;
-}*/
 #include <iostream>
 #include <vector>
 #include "BoardGame_Classes.h"
