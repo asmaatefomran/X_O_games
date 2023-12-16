@@ -6,7 +6,7 @@
 #include<random>
 #include<iomanip>
 #include<algorithm>
-#include"../include/BoardGame_Classes.hpp"
+#include"BoardGame_Classes.h"
 using namespace std;
 
 // Give player a symbol to use in playing
@@ -28,17 +28,10 @@ Player::Player (int order, char symbol) {
 
 // Get desired move: x y (each between 0 and 2)
 // Virtual (can change for other player types)
- void Player::get_move (int& x, int& y) {
-
-     // cout << "\nPlease enter your move x and y (0 to 2) separated by spaces: ";
-
-        cout << "\nPlease enter your move column (0 to 6) : ";
-        cin >> y;
-        x = 0;
-
-
+void Player::get_move (int& x, int& y) {
+    cout << "\nPlease enter your move x and y (0 to 2) separated by spaces: ";
+    cin >> x >> y;
 }
-
 
 // Give player info as a string
 string Player::to_string(){
@@ -49,3 +42,4 @@ string Player::to_string(){
 char Player::get_symbol() {
     return symbol;
 }
+
