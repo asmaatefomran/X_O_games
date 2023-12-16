@@ -109,6 +109,21 @@ class RandomPlayer: public Player {
         // Generate a random move
         void get_move(int& x, int& y);
 };
+///////////////////////////
+class TICTAC_X_O_Board:public Board {
+private:
+    Player* player_tictac[2];
+public:
+    TICTAC_X_O_Board (Player* playPtr[2]);
+    TICTAC_X_O_Board ();
+    bool update_board (int x, int y, char mark);
+    void display_board();
+    bool is_winner();
+    bool is_draw();
+    bool game_is_over();
+
+
+};
 
 ///////////////////////////////////////////
 class GameManager {
