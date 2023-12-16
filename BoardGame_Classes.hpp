@@ -95,6 +95,27 @@ class Player {
         // Get symbol used by player
         char get_symbol();
 };
+///////////////////////////////////////////
+// This class represents a player for pyramic game
+class PyramicPlayer : public Player{
+public:
+       void get_move(int& x, int& y)override;
+
+};
+///////////////////////////////////////////
+// This class represents a player for Four in Row game
+class FourinRowPlayer : public Player{
+public:
+       void get_move(int& x, int& y)override;
+
+};
+///////////////////////////////////////////
+// This class represents a player for 5*5 game
+class FiveXFivePlayer : public Player{
+public:
+       void get_move(int& x, int& y)override;
+
+};
 
 ///////////////////////////////////////////
 // This class represents a random computer player
