@@ -56,6 +56,21 @@ public:
 
 };
 
+///////////////////////////////////////////
+// This class represents a pyramid board
+// used in pyramic x_o game
+class Pyramic_Board:public Board {
+public:
+    Pyramic_Board();
+    bool update_board(int x, int y, char symbol) override;
+    void display_board() override;
+    bool is_winner() override;
+    bool is_draw() override;
+    bool game_is_over() override;
+
+};
+
+
 
 ///////////////////////////////////////////
 // This class represents a player who has
