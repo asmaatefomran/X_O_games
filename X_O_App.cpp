@@ -4,7 +4,6 @@
 // Version: 1
 
 #include <iostream>
-#include"../include/BoardGame_Classes.hpp"
 #include"BoardGame_Classes.hpp"
 #include "Player.cpp"
 #include "PyramicPlayer.cpp"
@@ -36,15 +35,23 @@ int main() {
         cin >> choice;
         if (choice != 1)
             players[1] = new PyramicPlayer (2, 'o');
-        else
+        /*else
             //Player pointer points to child
-            players[1] = new RandomPlayer ('o', 3);
+            players[1] = new RandomPlayer ('o', 3);*/
 
         gameBoard=new Pyramic_Board();
+        GameManager* x_o_game=new GameManager(gameBoard, players);
+        x_o_game->run();
+        delete players[0];
+        delete players[1];
+        delete gameBoard;
+        delete x_o_game;
+        system ("pause");
+        return 0;
 
         }
     else if(gameChoice==2){
-        Four_in_a_row_Board* gameBoard;
+        Four_in_a_row_X_O_Board* gameBoard;
         FourinRowPlayer* players[2];
         players[0] = new FourinRowPlayer (1, 'x');
        // players[0]->get_move(1 ,'X',gameChoice);
@@ -54,39 +61,47 @@ int main() {
         cin >> choice;
         if (choice != 1)
             players[1] = new FourinRowPlayer (2, 'o');
-        else
+        /*else
             //Player pointer points to child
-            players[1] = new RandomPlayer ('o', 3);
+            players[1] = new RandomPlayer ('o', 3);*/
 
-        gameBoard=new Four_in_a_row_Board();
- 
-    }
-    else if(gameChoice==3){
-       TICTAC_X_O_Board* gameBoard;
-        FoveXFivePlayer* players[2];
-        players[0] = new FoveXFivePlayer (1, 'x');
-       // players[0]->get_move(1 ,'X',gameChoice);
-        cout << "Welcome to FCAI Pyramic x_o Game. :)\n";
-        cout << "Press 1 if you want to play with computer: ";
-        int choice;
-        cin >> choice;
-        if (choice != 1)
-            players[1] = new FoveXFivePlayer (2, 'o');
-        else
-            //Player pointer points to child
-            players[1] = new RandomPlayer ('o', 3);
-
-        gameBoard=new TICTAC_X_O_Board(); 
-    }
-        
-
+        gameBoard=new Four_in_a_row_X_O_Board();
         GameManager* x_o_game=new GameManager(gameBoard, players);
         x_o_game->run();
         delete players[0];
         delete players[1];
         delete gameBoard;
         delete x_o_game;
+        system ("pause");
+        return 0;
+ 
+    }
+    else if(gameChoice==3){
+       TICTAC_X_O_Board* gameBoard;
+        FiveXFivePlayer* players[2];
+        players[0] = new FiveXFivePlayer (1, 'x');
+       // players[0]->get_move(1 ,'X',gameChoice);
+        cout << "Welcome to FCAI Pyramic x_o Game. :)\n";
+        cout << "Press 1 if you want to play with computer: ";
+        int choice;
+        cin >> choice;
+        if (choice != 1)
+            players[1] = new FiveXFivePlayer (2, 'o');
+        /*else
+            //Player pointer points to child
+            players[1] = new RandomPlayer ('o', 3);*/
 
-    system ("pause");
- return 0;
+        gameBoard=new TICTAC_X_O_Board();
+        GameManager* x_o_game=new GameManager(gameBoard, players);
+        x_o_game->run();
+        delete players[0];
+        delete players[1];
+        delete gameBoard;
+        delete x_o_game;
+        system ("pause");
+        return 0;
+    }
+        
+
+
 }

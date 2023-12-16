@@ -7,7 +7,7 @@
 #include<random>
 #include<iomanip>
 #include<algorithm>
-#include"../include/BoardGame_Classes.hpp"
+#include"BoardGame_Classes.hpp"
 using namespace std;
 
 // Set player symbol and name as Random Computer Player

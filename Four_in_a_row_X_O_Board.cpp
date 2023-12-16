@@ -2,7 +2,7 @@
 #include <algorithm>
 #include <iomanip>
 #include <random>
-#include"../include/BoardGame_Classes.hpp"
+#include"BoardGame_Classes.hpp"
 using namespace std;
 Four_in_a_row_X_O_Board::Four_in_a_row_X_O_Board(){
   n_rows=6;n_cols=7;

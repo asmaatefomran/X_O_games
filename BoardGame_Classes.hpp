@@ -99,8 +99,8 @@ class Player {
 // This class represents a player for pyramic game
 class PyramicPlayer : public Player{
 public:
-       PyramicPlayer( char symbol);
-       PyramicPlayer(int order, char symbol);
+       PyramicPlayer( char symbol):Player(symbol){};
+       PyramicPlayer(int order, char symbol):Player(order,symbol){};
        void get_move(int& x, int& y)override;
 
 };
@@ -108,8 +108,8 @@ public:
 // This class represents a player for Four in Row game
 class FourinRowPlayer : public Player{
 public:
-       FourinRowPlayer ( char symbol);
-       FourinRowPlayer (int order, char symbol);
+       FourinRowPlayer (char symbol):Player(symbol){};
+       FourinRowPlayer (int order, char symbol):Player(order,symbol){};
        void get_move(int& x, int& y)override;
 
 };
@@ -117,8 +117,8 @@ public:
 // This class represents a player for 5*5 game
 class FiveXFivePlayer : public Player{
 public:
-       FiveXFivePlayer ( char symbol);
-       FiveXFivePlayer (int order, char symbol);
+       FiveXFivePlayer ( char symbol):Player(symbol){};
+       FiveXFivePlayer (int order, char symbol):Player(order,symbol){};
        void get_move(int& x, int& y)override;
 
 };
