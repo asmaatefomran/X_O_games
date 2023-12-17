@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "BoardGame_Classes.hpp"
+#include "BoardGame_Classes.h"
 using namespace std;
 
 

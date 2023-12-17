@@ -3,7 +3,7 @@
 #include <random>
 #include <iomanip>
 #include <algorithm>
-#include"BoardGame_Classes.hpp"
+#include"BoardGame_Classes.h"
 using namespace std;
 static bool nowin =false, dontrun=false;
 TICTAC_X_O_Board::TICTAC_X_O_Board (Player* playerPtr[2] ) {

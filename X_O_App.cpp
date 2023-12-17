@@ -4,7 +4,7 @@
 // Version: 1
 
 #include <iostream>
-#include"BoardGame_Classes.hpp"
+#include"BoardGame_Classes.h"
 #include "Player.cpp"
 #include "PyramicPlayer.cpp"
 #include "FourinRowPlayer.cpp"

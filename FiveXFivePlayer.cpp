@@ -6,7 +6,7 @@
 #include<random>
 #include<iomanip>
 #include<algorithm>
-#include"BoardGame_Classes.hpp"
+#include"BoardGame_Classes.h"
 using namespace std;
 
 // Get desired move: x y (each between 0 and 4)
