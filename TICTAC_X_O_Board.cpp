@@ -81,9 +81,13 @@ bool TICTAC_X_O_Board::is_winner() {
             }
         }
     }
-    if(win1>win2 ) cout<<player_tictac[0]->to_string()<<" wins\n";
-    else if(win1 < win2 ) cout<<player_tictac[1]->to_string()<<" wins\n";
-    else nowin=true;
+    if(n_moves==24){
+
+        if(win1>win2 ) cout<<player_tictac[0]->to_string()<<" wins\n";
+        else if(win1 < win2 ) cout<<player_tictac[1]->to_string()<<" wins\n";
+        else nowin=true;
+
+    }
 
     return false;
 }
