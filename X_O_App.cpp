@@ -77,8 +77,8 @@ int main() {
  
     }
     else if(gameChoice==3){
-        TICTAC_X_O_Board* gameBoard;
         Player* players[2];
+        TICTAC_X_O_Board* gameBoard;
         players[0] = new FiveXFivePlayer (1, 'x');
         cout << "Welcome to FCAI Pyramic x_o Game. :)\n";
         cout << "Press 1 if you want to play with computer: ";
@@ -90,7 +90,7 @@ int main() {
             //Player pointer points to child
             players[1] = new RandomPlayer ('o', 3);*/
 
-        gameBoard=new TICTAC_X_O_Board();
+        gameBoard=new TICTAC_X_O_Board(players);
         GameManager* x_o_game=new GameManager(gameBoard, players);
         x_o_game->run();
         delete players[0];
