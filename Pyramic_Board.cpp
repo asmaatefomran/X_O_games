@@ -51,10 +51,10 @@ void Pyramic_Board::display_board() {
 bool Pyramic_Board::is_winner() {
     // Implement the logic to check for a winner based on the game rules
    //check diagonal
-    if((board[0][2]==board[1][3]&&board[0][2]==board[2][4])||(board[0][2]==board[1][1]&&board[0][2]==board[2][0])&&board[0][2]!=0)
+    if((board[0][2]==board[1][3]&&board[0][2]==board[2][4]&&board[0][2]!=0)||(board[0][2]==board[1][1]&&board[0][2]==board[2][0]&&board[0][2]!=0))
         return true;
     //check all possibles in row 2
-    if((board[2][0]==board[2][1]&&board[0][2]==board[2][2]&&board[2][0]!=0)||(board[2][1]==board[2][2]&&board[2][1]==board[2][3]&&board[2][1]!=0)||(board[2][2]==board[2][3]&&board[2][2]==board[2][4]&&board[2][2]!=0))
+    if((board[2][0]==board[2][1]&&board[2][0]==board[2][2]&&board[2][0]!=0)||(board[2][1]==board[2][2]&&board[2][1]==board[2][3]&&board[2][1]!=0)||(board[2][2]==board[2][3]&&board[2][2]==board[2][4]&&board[2][2]!=0))
         return true;
     //check row 1
     if(board[1][1]==board[1][2]&&board[1][1]==board[1][3]&&board[1][1]!=0)
