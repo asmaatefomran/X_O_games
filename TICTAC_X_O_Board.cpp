@@ -6,6 +6,8 @@
 #include"BoardGame_Classes.h"
 using namespace std;
 static bool nowin =false, dontrun=false;
+
+
 TICTAC_X_O_Board::TICTAC_X_O_Board (Player* playerPtr[2] ) {
     player_tictac[0]=playerPtr[0];
     player_tictac[1]=playerPtr[1];

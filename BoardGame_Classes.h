@@ -141,8 +141,8 @@ class TICTAC_X_O_Board:public Board {
 private:
     Player* player_tictac[2];
 public:
+    TICTAC_X_O_Board (){};
     TICTAC_X_O_Board (Player* playPtr[2]);
-    TICTAC_X_O_Board ();
     bool update_board (int x, int y, char mark);
     void display_board();
     bool is_winner();
