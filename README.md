@@ -1,6 +1,6 @@
 # ❌⭕ X-O Games
 
-Welcome to the **X-O Games** repository! This is a simple and fun command-line implementation of the classic Tic-Tac-Toe (X-O) game written in C++. It's a great project for beginners to understand basic concepts like conditionals, loops, functions, and user interaction in C++.
+Welcome to the **X-O Games** repository! This is a simple and fun command-line implementation of the classic Tic-Tac-Toe (X-O) game, Pyramid X-O, and five in row written in C++. It's a great project for beginners to understand basic concepts like conditionals, loops, functions, and user interaction in C++.
 
 ---
 
@@ -20,14 +20,7 @@ Welcome to the **X-O Games** repository! This is a simple and fun command-line i
 
 ---
 
-##  How to Run
 
-### Clone the repository
-
-<pre lang="markdown">  git clone https://github.com/asmaatefomran/X_O_games.git 
-  cd X_O_games 
-  g++ xo_game.cpp -o xo_game 
-  ./xo_game ``` </pre>
 
 ## Learning Goals
 
