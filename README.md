@@ -24,7 +24,10 @@ Welcome to the **X-O Games** repository! This is a simple and fun command-line i
 
 ### Clone the repository
 
-<pre lang="markdown"> ```bash git clone https://github.com/asmaatefomran/X_O_games.git cd X_O_games g++ xo_game.cpp -o xo_game ./xo_game ``` </pre>
+<pre lang="markdown">  git clone https://github.com/asmaatefomran/X_O_games.git 
+  cd X_O_games 
+  g++ xo_game.cpp -o xo_game 
+  ./xo_game ``` </pre>
 
 ## Learning Goals
 
